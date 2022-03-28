@@ -1,7 +1,7 @@
 function bot() {
 const mineflayer = require('mineflayer')
 
-const bot = mineflayer.createBot({
+bot2 = mineflayer.createBot({
   host: 'hamlet.aternos.host', // minecraft server ip
   username: 'Bot_BanShield', // minecraft username
   port: 60623,                // only set if you need a port that isn't 25565
@@ -9,15 +9,16 @@ const bot = mineflayer.createBot({
   // auth: 'mojang'              // only set if you need microsoft auth, then set this to 'microsoft'
 })
 
-bot.on('chat', (username, message) => {
+bot2.on('chat', (username, message) => {
   if (username === bot.username) return
   if (message == "Бот, выйди") {
-    process.exit(1);
+    bot2.end()
+    bot()
   }
 })
 
 // Log errors and kick reasons:
-bot.on('kicked', function(e) {bot()})
-bot.on('error', function(e) {bot()})
+bot2.on('kicked', function(e) {bot()})
+bot2.on('error', function(e) {bot()})
 }
 bot()
