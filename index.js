@@ -21,4 +21,6 @@ bot2.on('chat', (username, message) => {
 bot2.on('kicked', function(e) {bot()})
 bot2.on('error', function(e) {bot()})
 }
+while (1) {
 bot()
+}
