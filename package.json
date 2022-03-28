@@ -1,0 +1,22 @@
+{
+  "name": "banshield",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GEOEGII555/banshield-bot.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GEOEGII555/banshield-bot/issues"
+  },
+  "homepage": "https://github.com/GEOEGII555/banshield-bot#readme",
+  "dependencies": {
+    "mineflayer": "^4.2.0"
+  }
+}
