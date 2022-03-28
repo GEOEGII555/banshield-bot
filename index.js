@@ -9,6 +9,13 @@ const bot = mineflayer.createBot({
   // auth: 'mojang'              // only set if you need microsoft auth, then set this to 'microsoft'
 })
 
+bot.on('chat', (username, message) => {
+  if (username === bot.username) return
+  if (message == "Бот, выйди") {
+    process.exit(1);
+  }
+})
+
 // Log errors and kick reasons:
 bot.on('kicked', function(e) {bot()})
 bot.on('error', function(e) {bot()})
