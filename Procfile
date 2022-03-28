@@ -1,0 +1,1 @@
+worker: npx node@17.1.0 index.js
