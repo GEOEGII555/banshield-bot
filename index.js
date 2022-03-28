@@ -13,7 +13,7 @@ bot2.on('chat', (username, message) => {
   if (username === bot.username) return
   if (message == "Бот, выйди") {
     bot2.end()
-    setTimeout(function() {bot()}, 1500)
+    setTimeout(function() {bot()}, 3500)
   }
 })
 
