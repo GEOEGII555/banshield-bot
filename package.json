@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/GEOEGII555/banshield-bot#readme",
   "dependencies": {
-    "mineflayer": "^4.2.0"
+    "mineflayer": "^4.2.0",
+    "express": "^1.0.0"
   }
 }
