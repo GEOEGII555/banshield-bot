@@ -34,3 +34,4 @@ setInterval(function() {
   bot();
 }, 10000);
 app.listen(process.env.PORT, () => {})
+ 
